@@ -1,0 +1,32 @@
+[
+	{
+		"id": 1,
+		"name": "AI",
+		"image": "1.jpg"
+	},
+	{
+		"id": 2,
+		"name": "Mobile Developments",
+		"image": "2.jpg"
+	},
+	{
+		"id": 3,
+		"name": "Robotics",
+		"image": "3.jpg"
+	},
+	{
+		"id": 4,
+		"name": "Web Developments",
+		"image": "4.jpg"
+	},
+	{
+		"id": 5,
+		"name": "Digital Marketing",
+		"image": "5.jpg"
+	},
+	{
+		"id": 6,
+		"name": "Big Data",
+		"image": "6.jpg"
+	}
+]

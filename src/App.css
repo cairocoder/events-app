@@ -1,0 +1,42 @@
+.wrapper {
+	text-align: center;
+}
+
+.wrapper a {
+	display: block;
+	margin-top: 10px;
+}
+
+.page-header {
+	text-align: center;
+}
+
+.event-item,
+.topic-item {
+	margin: 20px 10px;
+}
+
+.ant-card-cover {
+	border: 1px solid #ccc;
+}
+
+.event-deck,
+.topic-deck {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+}
+.event-item-title,
+.topic-item-title {
+	text-align: center;
+}
+
+.page-header {
+	font-size: 32px;
+}
+
+.search-input {
+	width: 300px;
+}
