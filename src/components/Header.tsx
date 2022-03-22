@@ -6,14 +6,15 @@ const Header: React.FC<{ action: string; type: string }> = ({ action, type }) =>
 	const { searchTerm } = useSelector((state: any) => ({
 		searchTerm: state[type].searchTerm,
 	}));
+
 	const dispatch = useDispatch();
 
 	const onSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
 		dispatch({ type: action, payload: event.target.value });
 	};
 
+	// Display title based on the deck type
 	let title = "";
-
 	type === "events" ? (title = "Events") : (title = "Topics");
 
 	return (

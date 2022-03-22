@@ -7,6 +7,7 @@ export const rootReducer = combineReducers({ topics: topicsReducer, events: even
 
 export type AppState = ReturnType<typeof rootReducer>;
 
+// Store configuration
 export default function configureStore() {
 	const middlewares = [thunkMiddleware];
 	const middleWareEnhancer = applyMiddleware(...middlewares);

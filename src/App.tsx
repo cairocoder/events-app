@@ -13,8 +13,11 @@ const App: React.FC = () => {
 	return (
 		<Provider store={store}>
 			<Routes>
+				{/* -- Index/Topics route -- */}
 				<Route path="/" element={<Topics />} />
+				{/* -- Events route -- */}
 				<Route path="topics/:topicId" element={<Events />} />
+				{/* -- Other routes -- */}
 				<Route
 					path="*"
 					element={

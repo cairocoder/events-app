@@ -5,6 +5,7 @@ import { Event } from "../types";
 import { useParams } from "react-router-dom";
 
 const EventDeck: React.FC = () => {
+	// Get URL parameters
 	let params = useParams();
 
 	const { eventList, searchTerm } = useSelector((state: any) => ({
@@ -12,8 +13,10 @@ const EventDeck: React.FC = () => {
 		searchTerm: state.events.searchTerm,
 	}));
 
+	// Display events
 	const Events = eventList
 		.filter(
+			// Filter events based on search criteria or topicId
 			(event: Event) =>
 				(searchTerm === "" || event.name.toLowerCase().includes(searchTerm.toLowerCase())) &&
 				event.topicId == params.topicId

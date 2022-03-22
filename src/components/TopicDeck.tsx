@@ -9,6 +9,7 @@ const TopicDeck: React.FC = () => {
 		searchTerm: state.topics.searchTerm,
 	}));
 
+	// Filter topics based on search criteria
 	const Topics = topicList
 		.filter((topic: Topic) => searchTerm === "" || topic.name.toLowerCase().includes(searchTerm.toLowerCase()))
 		.map((topic: Topic) => {
